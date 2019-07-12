@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Warehouse.Business\Warehouse.Business.csproj" />
+    <ProjectReference Include="..\Warehouse.Data.Entities\Warehouse.Data.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

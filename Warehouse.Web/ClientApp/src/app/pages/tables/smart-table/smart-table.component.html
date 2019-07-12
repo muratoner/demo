@@ -1,0 +1,14 @@
+<nb-card>
+  <nb-card-header>
+    Products
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table
+    #productTable
+    (deleteConfirm)="onDeleteConfirm($event)"
+    (editConfirm)="onSaveConfirm($event)"
+    (createConfirm)="onCreateConfirm($event)" [settings]="settings" [source]="source">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
