@@ -12,7 +12,6 @@ using Warehouse.Api.Validation;
 using Warehouse.Business.Services;
 using Warehouse.Data;
 using Warehouse.Data.Entities;
-using Warehouse.Repository;
 
 namespace Warehouse.Api
 {
@@ -54,7 +53,6 @@ namespace Warehouse.Api
                 });
             });
 
-            services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IServiceBase<Product>, ServiceProduct>();
             services.AddTransient<IValidator<Product>, ValidationProduct>();
 

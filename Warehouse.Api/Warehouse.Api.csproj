@@ -21,7 +21,6 @@
     <ProjectReference Include="..\Warehouse.Core\Warehouse.Core.csproj" />
     <ProjectReference Include="..\Warehouse.Data\Warehouse.Data.csproj" />
     <ProjectReference Include="..\Warehouse.Poco\Warehouse.Poco.csproj" />
-    <ProjectReference Include="..\Warehouse.Repository\Warehouse.Repository.csproj" />
   </ItemGroup>
 
 </Project>

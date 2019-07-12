@@ -7,17 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Api", "Warehouse.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Data", "Warehouse.Data\Warehouse.Data.csproj", "{11E58217-45D0-41A1-AD6A-4E130B07FA67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Repository", "Warehouse.Repository\Warehouse.Repository.csproj", "{8A51D976-AA2D-4303-A32D-042A2CEF0975}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Business", "Warehouse.Business\Warehouse.Business.csproj", "{F28FC659-C29B-4655-82C6-A100C31FACDD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Core", "Warehouse.Core\Warehouse.Core.csproj", "{29BE24D9-BAC2-4843-B3D0-06A78582F908}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Data.Entities", "Warehouse.Data.Entities\Warehouse.Data.Entities.csproj", "{6C1E4B63-DEB4-4D59-AFC7-E9894FDB1901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.Web", "Warehouse.Web\Warehouse.Web.csproj", "{A932DC51-2CBC-4B93-837D-1E82FADEE852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Web", "Warehouse.Web\Warehouse.Web.csproj", "{A932DC51-2CBC-4B93-837D-1E82FADEE852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.Poco", "Warehouse.Poco\Warehouse.Poco.csproj", "{00BA9F3F-AF5B-416B-B4DD-D7953795FF7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Poco", "Warehouse.Poco\Warehouse.Poco.csproj", "{00BA9F3F-AF5B-416B-B4DD-D7953795FF7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +31,6 @@ Global
 		{11E58217-45D0-41A1-AD6A-4E130B07FA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E58217-45D0-41A1-AD6A-4E130B07FA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11E58217-45D0-41A1-AD6A-4E130B07FA67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A51D976-AA2D-4303-A32D-042A2CEF0975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A51D976-AA2D-4303-A32D-042A2CEF0975}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A51D976-AA2D-4303-A32D-042A2CEF0975}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A51D976-AA2D-4303-A32D-042A2CEF0975}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F28FC659-C29B-4655-82C6-A100C31FACDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F28FC659-C29B-4655-82C6-A100C31FACDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F28FC659-C29B-4655-82C6-A100C31FACDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
