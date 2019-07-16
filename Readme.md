@@ -25,3 +25,17 @@ Showing product count in dashboard page.
 - LinkedIn: https://linkedin.com/in/muratoner
 - My Blog: http://muratoner.net
 - Stackoverflow: https://stackoverflow.com/users/6289085
+
+## Installation
+
+1. Download project from github.
+2. Install NodeJS.(Recomend install last version) - https://nodejs.org/en/
+3. Install Git - https://git-scm.com/
+3. Install Angular CLI on npm package manager. - https://cli.angular.io/
+4. Install .Net Core
+5. Run `npm -i` command in `Warehouse.Web>ClientApp` folder.
+6. Run `dotnet run` command in `Warehouse.Web` project folder. It will running on 50050 Port.
+6. Run `dotnet run` command in `Warehouse.Api` project folder. It will running on 54048 Port.
+
+## Problems & Solution
+- When you run `ng build` command in `Warehouse.Web>ClientApp` folder or when you run `dotnet run` command in `Warehouse.Web` project folder if you see as `Error: Can't find Python executable "python", you can set the PYTHON env variable.` error then run `npm --add-python-to-path='true' --debug install --global windows-build-tools` command.

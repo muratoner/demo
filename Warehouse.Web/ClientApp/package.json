@@ -73,8 +73,7 @@
     "aspnet-prerendering": "^3.0.1",
     "jquery": "3.3.1",
     "popper.js": "^1.14.3",
-    "typeface-exo": "0.0.22",
-    "web-animations-js": "github:angular/web-animations-js#release_pr208"
+    "typeface-exo": "0.0.22"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.6",
