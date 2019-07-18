@@ -92,9 +92,9 @@ namespace Warehouse.Business.Services
         /// <returns></returns>
         public bool Delete(int id)
         {
-            var product = WarehouseDbContext.Product.FirstOrDefault(p => p.Id == id);
+            var product = WarehouseDbContext.Set<TEntity>().FirstOrDefault(p => p.Id == id);
             if (product == null) return default(bool);
-            WarehouseDbContext.Product.Remove(product);
+            WarehouseDbContext.Set<TEntity>().Remove(product);
             return WarehouseDbContext.SaveChanges() > 0;
         }
 

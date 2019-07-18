@@ -31,7 +31,7 @@ namespace Warehouse.Api.Helper
                         Color = commerce.Color(),
                         Ean13 = commerce.Ean13(),
                         Name = commerce.ProductName(),
-                        Price = commerce.Price(),
+                        Price = decimal.Parse(commerce.Price()),
                         Currency = finance.Currency().Code,
                         Description = lorem.Sentences(),
                         Company = company.CompanyName(),

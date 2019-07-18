@@ -1,8 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 using Warehouse.Business.Services;
-using Warehouse.Core.Extensions;
 using Warehouse.Data.Entities;
 using Warehouse.Poco.Result;
 
@@ -33,12 +31,11 @@ namespace Warehouse.Api.Controllers
             [FromQuery(Name = "_page")]int skip, 
             [FromQuery(Name = "_limit")]int take, 
             [FromQuery(Name = "_sort")]string orderProperty, 
-            [FromQuery(Name = "_order")]string orderType,
-            [FromQuery(Name = "_filter_property_name")]string filterProperty)
-            => ToResultData(_serviceBase.GetWithCount, skip, take, orderProperty, orderType);
+            [FromQuery(Name = "_order")]string orderType)
+                => ToResultData(_serviceBase.GetWithCount, skip, take, orderProperty, orderType);
 
         /// <summary>
-        /// You can get products from your sended id parameter.
+        /// You can get products from your sent id parameter.
         /// </summary>
         /// <param name="id">You can get just one data with entered your id number value.</param>
         /// <returns></returns>
@@ -52,18 +49,7 @@ namespace Warehouse.Api.Controllers
         /// <param name="product">Product entry.</param>
         [HttpPost]
         public ResultModel<Product> Post([FromBody] Product product)
-        {
-            var res = new ResultModel<Product>();
-            var resValidation = _validatorProduct.Validate(product);
-            if (!resValidation.IsValid)
-            {
-                resValidation.Errors.Select(e => e.ErrorMessage).ForEach(res.Errors.Add);
-            }
-            if(res.HasError)
-                return res;
-            res.Model = _serviceBase.Create(product);
-            return res;
-        }
+            => ToResultModel(_serviceBase.Create, product, _validatorProduct, product);
 
         /// <summary>
         /// You can update product.
@@ -72,18 +58,7 @@ namespace Warehouse.Api.Controllers
         /// <param name="product"></param>
         [HttpPut("{id}")]
         public ResultModel<Product> Put(int id, [FromBody] Product product)
-        {
-            var res = new ResultModel<Product>();
-            var resValidation = _validatorProduct.Validate(product);
-            if (!resValidation.IsValid)
-                resValidation.Errors.Select(e => e.ErrorMessage).ForEach(res.Errors.Add);
-            
-            if (res.HasError)
-                return res;
-
-            res.Model = _serviceBase.Update(id, product);
-            return res;
-        }
+            => ToResultModel(_serviceBase.Update, id, product, _validatorProduct, product);
 
         /// <summary>
         /// You can delete product with id parameter.

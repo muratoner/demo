@@ -8,8 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 using Warehouse.Api.Helper;
-using Warehouse.Api.Validation;
 using Warehouse.Business.Services;
+using Warehouse.Business.Validation;
 using Warehouse.Data;
 using Warehouse.Data.Entities;
 

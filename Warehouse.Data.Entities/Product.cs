@@ -4,7 +4,7 @@
     {
         public string Name { get; set; }
 
-        public string Price { get; set; }
+        public decimal Price { get; set; }
 
         public string Company { get; set; }
 
