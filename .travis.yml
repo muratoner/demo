@@ -6,9 +6,9 @@ dotnet: 2.2
 script:
     - dotnet restore
     - dotnet build
-    - dotnet test Demo/Warehouse.Test/Warehouse.Test.csproj --filter TestCategory!=OPTIONAL-TEST
+    - dotnet test Warehouse.Test/Warehouse.Test.csproj --filter TestCategory!=OPTIONAL-TEST
 after_script:
-    - dotnet test Demo/Warehouse.Test/Warehouse.Test.csproj --filter TestCategory=OPTIONAL-TEST
+    - dotnet test Warehouse.Test/Warehouse.Test.csproj --filter TestCategory=OPTIONAL-TEST
 global:
     - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
     - DOTNET_CLI_TELEMETRY_OPTOUT=1
