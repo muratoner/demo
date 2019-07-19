@@ -1,4 +1,4 @@
-# Introduce Warehouse Project
+# Introduce Warehouse Project [![Build Status](https://travis-ci.org/muratoner/Demo.svg?branch=master)](https://travis-ci.org/muratoner/Demo)
 Manage company products with warehouse project. You can add, delete, update, search products.
 
 Product grid created with pagination and grid data seed with server side.
